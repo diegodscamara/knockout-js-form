@@ -10,13 +10,15 @@
 </head>
 
 <body>
-    <p>First Name: <input data-bind="value: firstName" /></p>
-    <p>Second Name: <input data-bind="value: secondName" /></p>
+    <p>First name: <strong data-bind="text: firstName">todo</strong></p>
+    <p>Last name: <strong data-bind="text: lastName">todo</strong></p>
 
-    <p>First Name: <strong data-bind="text: firstName">Hi</strong></p>
-    <p>Second Name: <strong data-bind="text: secondName">There</strong></p>
+    <p>First name: <input data-bind="value: firstName" /></p>
+    <p>Last name: <input data-bind="value: lastName" /></p>
 
-    <p>Full Name: <strong data-bind="text: fullName"></strong></p>
+    <p>Full name: <strong data-bind="text: fullName"></strong></p>
+
+    <button data-bind="click: capitalizeLastName"> Go caps </button>
     <script src="main.js"></script>
 </body>
 
